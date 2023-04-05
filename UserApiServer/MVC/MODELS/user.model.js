@@ -1,26 +1,23 @@
 const mongoose=require("mongoose")
-
+const { Schema } = mongoose;
 //USER SCHEMA
 
 //Step-1:- creating the Schema
 
-const userSchema=new mongoose.Schema({
+const userSchema=new Schema({
     name:{type:String,required:true},
 
-    createdOn:{type:String,required:false},
-
-    gender:{type:String,required:true,unique:true},
+     gender:{type:String,required:true,unique:true},
 
     dob:{type:String,required:true},
 
     city: { type: String, required: true },
     state: { type: String, required: true },
     pincode: { type: Number, required: true },
-    modifiedOn: Date.now()
+    
 },
 {
-    versionKey:false,
-    timestamps:true,
+    timestamps: { createdAt: 'createdOn', updatedAt: 'ModifiedOn' }
 }
 
 

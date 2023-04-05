@@ -12,7 +12,7 @@ const userrouter = express.Router();
 
 
 userrouter.get("/", async (req, res) => {
-
+    console.log("get",req)
     try {
         const user = await User.find().lean().exec()
         return res.status(200).send({ userget: user }) 
@@ -28,6 +28,7 @@ userrouter.get("/", async (req, res) => {
 //POST DATA
 
 userrouter.post("/", async (req, res) => {
+    console.log(req,"lsndfk")
     try {
         const user = await User.create(req.body);
 
