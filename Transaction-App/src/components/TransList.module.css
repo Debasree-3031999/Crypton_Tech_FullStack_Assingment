@@ -1,0 +1,28 @@
+*{
+    font-family: sans-serif;
+}
+.main{
+    width: 35%;
+    margin: auto;
+    border: 1px solid black;
+    margin-top: 100px;
+    padding: 0 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+.main p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.main>div:last-child{
+    margin-top: -20px;
+    /* border: 1px solid red; */
+    margin-bottom: 30px;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+.heading p{
+    font-size: 30px;
+}
