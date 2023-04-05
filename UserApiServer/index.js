@@ -46,6 +46,27 @@ app.get("/get",async(req,res)=>{
 // }).catch((err) => { console.log(err) })
 
 
+    // delete data
+// fetch('http://localhost:3000/users', {
+//     'method': 'POST',
+//     'headers': { 'Content-Type': "application/json" },
+//     'body': JSON.stringify({
+//         name: String,
+//         createdOn: String,
+//         gender: String,
+//         dob: String,
+//         city: String,
+//         state: String,
+//         pincode: Number,
+//         modifiedOn: String
+//     })
+// }).then((res) => {
+//     res.json();
+// }).then((data) => {
+//     console.log(data)
+// }).catch((err) => { console.log(err) })
+
+
 app.listen(port, () => {
-    console.log(`json server listening on port ${port}`)
+    console.log(`json server listening on port ${port}`,process.env.a)
 })
