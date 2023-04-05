@@ -1,0 +1,28 @@
+{
+    "stats": [
+        {
+            "type": "Revenue",
+            "count": 2.047,
+            "gain": null,
+            "loss": 10
+        },
+        {
+            "type": "Orders",
+            "count": 356,
+            "gain": 20,
+            "loss": null
+        },
+        {
+            "type": "Dine In",
+            "count": 220,
+            "gain": 10,
+            "loss": null
+        },
+        {
+            "type": "Take Away",
+            "count": 135,
+            "gain": null,
+            "loss": 5
+        }
+    ]
+}

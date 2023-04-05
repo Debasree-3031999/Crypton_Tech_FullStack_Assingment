@@ -1,0 +1,29 @@
+.navbar{
+  /* border: 1px solid ; */
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: rgb(72, 70, 70);
+}
+.heading{
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(175, 173, 173);
+
+}
+.mycourse{
+  /* display:flex */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(126, 126, 126);
+  font-weight: 500;
+}
+.img{
+ 
+}
+.courseandimg{
+  display: flex;
+
+}

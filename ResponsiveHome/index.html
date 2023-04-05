@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive home screen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active"><img src="https://www.masaischool.com/img/navbar/logo.svg" alt=""></a>
+                <a href="#news">COURSES</a>
+                <a href="#contact">HIRE FROM US</a>
+                <a href="#about">REFER & EARN</a>
+                <a href="#about">FEES & PAP</a>
+                <a href="#about">EVENTS & CONTESTS</a>
+
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="afterNav"> <button style="border-radius: 30px;"
+                class="mui-btn mui-btn--primary mui-btn--raised">#Top</button>
+        </div>
+
+
+        <div class="heading">A Responsibly As Teach Leading, Global Company </div>
+
+
+        <div class="afterHeading">Creating Superior Products & Services</div>
+
+        <div class="starFlexDiv">
+            <div class="starBtn"><button style="border-radius: 20px; width: 70px;" class="mui-btn mui-btn--dark"><i
+                        class="fa-regular fa-star"></i></button></div>
+            <div class="rightStarDiv">
+                <h4>Trust Pilot</h4>
+                <p class="rate">Rated Best <span class="span">12.6K</span> Reviews</p>
+            </div>
+        </div>
+
+        <div class="imgFlexDiv">
+            <div class="leftimg">
+                <img src="./resource/play.jpg" alt="">
+            </div>
+            <div class="rightimg">
+                <img src="./resource/percentage.jpg" alt="" srcset="">
+            </div>
+        </div>
+
+
+
+        <button class="mui-btn mui-btn--raised">Signup to Get 50% OFF</button>
+        <br>
+        <button class="mui-btn mui-btn--dark">Explore New Products</button>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
