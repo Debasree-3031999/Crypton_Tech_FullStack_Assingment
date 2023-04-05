@@ -5,25 +5,17 @@ const express = require("express")
 //--schema importing---//
 const User = require("../MODELS/user.model")
 
-const Post = require("../MODELS/post.model")
 
-const Comment = require("../MODELS/comment.model")
 
 
 const userrouter = express.Router();
 
-//USERS CRUD
-//what we want==code
-
-//body=>req.body
-//url=>req.url
-//query string=>req.query
 
 userrouter.get("/", async (req, res) => {
 
     try {
         const user = await User.find().lean().exec()
-        return res.status(200).send({ userget: user }) //if nothing can get it returns  empty arr []
+        return res.status(200).send({ userget: user }) 
 
     } catch (error) {
 
@@ -47,19 +39,6 @@ userrouter.post("/", async (req, res) => {
     }
 })
 
-//FIND BY ID
-
-userrouter.get("/:id", async (req, res) => {
-    try {
-        const user = await User.findById(req.params.id).lean().exec();
-
-        res.status(200).send({ findbyid: user });
-    } catch (error) {
-
-        return res.status(500).send({ message: error.message })
-
-    }
-})
 
 //UPDATED DATA
 userrouter.patch("/:id", async (req, res) => {
@@ -89,18 +68,7 @@ userrouter.delete("/:id", async (req, res) => {
     }
 })
 
-//how to get all  post of a user//
-userrouter.get("/:userId/post", async (req, res) => {
-    console.log(req.params.userId)
-    try {
-        const posts = await Post.find({ userId: req.params.userId }).lean().exec();
 
-        return res.status(200).send(posts);
-    } catch (error) {
-        return res.status(500).send({ message: error.message });
-
-    }
-})
 
 
 module.exports = userrouter

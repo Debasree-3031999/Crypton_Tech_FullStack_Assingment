@@ -5,13 +5,18 @@ const mongoose=require("mongoose")
 //Step-1:- creating the Schema
 
 const userSchema=new mongoose.Schema({
-    firstname:{type:String,required:true},
+    name:{type:String,required:true},
 
-    lastname:{type:String,required:false},
+    createdOn:{type:String,required:false},
 
-    email:{type:String,required:true,unique:true},
+    gender:{type:String,required:true,unique:true},
 
-    password:{type:String,required:true},
+    dob:{type:String,required:true},
+
+    city: { type: String, required: true },
+    state: { type: String, required: true },
+    pincode: { type: Number, required: true },
+    modifiedOn: Date.now()
 },
 {
     versionKey:false,
