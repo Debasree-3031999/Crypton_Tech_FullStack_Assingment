@@ -9,7 +9,7 @@ function App() {
 const[mydata,setMydata]=useState([]);
 
 useEffect(()=>{
-  fetch("http://localhost:3000/data").then((res) => {
+  fetch("https://coursetable.onrender.com/data").then((res) => {
     return res.json()
   }).then((data) => {
     console.log(data)
